@@ -1,0 +1,19 @@
+Employee Handbook — Acme Robotics
+
+Working Hours
+Employees are expected to work 40 hours per week. Core hours are 10 AM to 4 PM, during which all employees must be online or in the office. Outside of core hours, employees may choose their own schedule as long as weekly hours are met.
+
+Remote Work Policy
+Employees may work remotely up to 3 days per week. Fully remote arrangements require manager approval and are reviewed every 6 months. All remote employees must be reachable on Slack during core hours.
+
+Leave Policy
+Full-time employees accrue 18 days of paid leave per year, in addition to public holidays. Leave requests should be submitted at least 5 business days in advance through the HR portal. Sick leave is separate and does not require advance notice.
+
+Expense Reimbursement
+Business expenses under $50 can be submitted without prior approval. Expenses above $50 require manager sign-off before the purchase is made. All reimbursement requests must include a receipt and be submitted within 30 days of the expense.
+
+Performance Reviews
+Performance reviews happen twice a year, in June and December. Reviews are based on goals set at the start of each cycle in collaboration with the employee's manager. Salary adjustments, when applicable, are communicated within two weeks of the review.
+
+Equipment Policy
+New employees receive a laptop and a one-time $300 home-office stipend during onboarding. Equipment remains company property and must be returned within 14 days of employment ending.
