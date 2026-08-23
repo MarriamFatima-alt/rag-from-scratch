@@ -8,13 +8,23 @@ instead of the model's own memory.
 """
 
 import os
-import tempfile
 
 import gradio as gr
 from dotenv import load_dotenv
 
 from rag.pipeline import RAGPipeline
 from rag.loaders import load_files
+
+# Hugging Face ZeroGPU Spaces require at least one function decorated with
+# @spaces.GPU to be detected at startup. This app is pure CPU/Python and
+# never needs a GPU, so we fall back to a harmless no-op decorator when the
+# `spaces` package isn't available (e.g. running locally).
+try:
+    import spaces
+    gpu_decorator = spaces.GPU
+except ImportError:
+    def gpu_decorator(func):
+        return func
 
 load_dotenv()
 
@@ -41,6 +51,7 @@ def index_documents(files):
         return f"❌ Failed to index documents: {e}"
 
 
+@gpu_decorator
 def answer_question(question, top_k, history):
     if not question or not question.strip():
         return history, ""
